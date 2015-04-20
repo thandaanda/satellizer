@@ -1,6 +1,6 @@
 {
   "name": "magnet-satellizer",
-  "version": "0.0.1",
+  "version": "0.9.5",
   "main": "satellizer.js",
   "homepage": "https://github.com/thandaanda/satellizer",
   "ignore": [
