@@ -10,10 +10,10 @@
     .constant('satellizer.config', {
       baseUrl: '/',
       httpInterceptor: true,
-      loginOnSignup: true,
-      loginRedirect: '/',
+      loginOnSignup: false,
+      loginRedirect: '/login',
       logoutRedirect: '/',
-      signupRedirect: '/login',
+      signupRedirect: '/signup',
       loginUrl: '/auth/login',
       signupUrl: '/auth/signup',
       loginRoute: '/login',
@@ -317,11 +317,11 @@
 
           storage.set(tokenName, token);
 
-          if (config.loginRedirect && !redirect) {
+          /*if (config.loginRedirect && !redirect) {
             $location.path(config.loginRedirect);
           }  else if (redirect && angular.isString(redirect)) {
             $location.path(encodeURI(redirect));
-          }
+          }*/
         };
 
         shared.removeToken = function() {

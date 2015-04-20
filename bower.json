@@ -1,8 +1,8 @@
 {
-  "name": "satellizer",
-  "version": "0.9.4",
+  "name": "magnet-satellizer",
+  "version": "0.0.1",
   "main": "satellizer.js",
-  "homepage": "https://github.com/sahat/satellizer",
+  "homepage": "https://github.com/thandaanda/satellizer",
   "ignore": [
     ".gitignore",
     ".jshintrc",
@@ -14,9 +14,24 @@
     "gulpfile.js",
     "examples",
     "coverage",
-    "test"
+    "test",
+    "**/.*",
+    "public/lib",
+    "tests"
   ],
   "dependencies": {
     "angular": "latest"
-  }
+  },
+  "authors": [
+    "Keyur Raval <keyur@getmagnet.com>"
+  ],
+  "description": "Token based authentication for AngularJS",
+  "keywords": [
+    "token",
+    "jwt",
+    "authentication",
+    "angularjs",
+    "client-side"
+  ],
+  "license": "MIT"
 }
