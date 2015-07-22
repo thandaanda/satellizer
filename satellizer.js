@@ -1,6 +1,6 @@
 /**
- * Satellizer 0.9.5
- * (c) 2015 Keyur Raval
+ * Satellizer 0.13.2
+ * (c) 2015 Sahat Yalkabov
  * License: MIT
  */
 
@@ -23,10 +23,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
       tokenRoot: null,
       cordova: false,
       baseUrl: '/',
-      loginOnSignup: false,
-      loginRedirect: '/login',
-      logoutRedirect: '/',
-      signupRedirect: '/signup',
       loginUrl: '/auth/login',
       signupUrl: '/auth/signup',
       unlinkUrl: '/auth/unlink/',
@@ -350,11 +346,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
           }
 
           storage.set(tokenName, token);
-          /*if (config.loginRedirect && !redirect) {
-            $location.path(config.loginRedirect);
-          }  else if (redirect && angular.isString(redirect)) {
-            $location.path(encodeURI(redirect));
-          }*/
         };
 
         Shared.removeToken = function() {
