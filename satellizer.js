@@ -207,7 +207,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
                     url: '/auth/facebook',
                     authorizationEndpoint: 'https://www.facebook.com/v2.5/dialog/oauth',
                     redirectUri: window.location.origin + '/' || window.location.protocol + '//' + window.location.host + '/',
-                    scope: ['email','id','name','email','first_name','last_name'],
+                    scope: ['email', 'public_profile'],
                     scopeDelimiter: ',',
                     requiredUrlParams: ['display', 'scope'],
                     display: 'popup',
