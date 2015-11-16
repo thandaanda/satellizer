@@ -207,9 +207,10 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
                     url: '/auth/facebook',
                     authorizationEndpoint: 'https://www.facebook.com/v2.5/dialog/oauth',
                     redirectUri: window.location.origin + '/' || window.location.protocol + '//' + window.location.host + '/',
-                    requiredUrlParams: ['display', 'scope'],
+                    requiredUrlParams: ['display','scope'],
 					scope: ['email', 'public_profile'],
                     display: 'popup',
+					scopeDelimiter: ' ',
                     type: '2.0',
                     popupOptions: {
                         width: 580,
