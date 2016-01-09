@@ -143,6 +143,24 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
           scopeDelimiter: ',',
           type: '2.0',
           popupOptions: { width: 1028, height: 529 }
+        },
+		stripe: {
+		  name: 'stripe',
+		  url: '/auth/stripe',
+		  authorizationEndpoint: 'https://connect.stripe.com/oauth/authorize',
+		  redirectUri: window.location.origin,
+		  requiredUrlParams: ['scope'],
+		  scope: ['read_write'],
+		  type: '2.0',
+		  popupOptions: { width: 1028, height: 529 }
+		},
+		paypal: {
+          name: 'paypal',
+          url: '/auth/paypal',
+          authorizationEndpoint: 'https://www.sandbox.paypal.com/cgi-bin/webscr',
+          redirectUri: window.location.origin,
+          type: '1.0',
+          popupOptions: { width: 1028, height: 645 }
         }
       }
     })
