@@ -158,10 +158,10 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
           name: 'paypal',
           url: '/auth/paypal',
           authorizationEndpoint: 'https://www.sandbox.paypal.com/cgi-bin/webscr',
-          redirectUri: window.location.origin,
+          redirectUri: window.location.href,
           type: '1.0',
           popupOptions: { width: 1028, height: 645 }
-        }
+        } 
       }
     })
     .provider('$auth', ['SatellizerConfig', function(config) {
@@ -675,7 +675,6 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
             angular.forEach(obj, function(value, key) {
               str.push(encodeURIComponent(key) + '=' + encodeURIComponent(value));
             });
-
             return str.join('&');
           };
 
