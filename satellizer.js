@@ -157,7 +157,7 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
 		paypal: {
           name: 'paypal',
           url: '/auth/paypal',
-          authorizationEndpoint: 'https://www.sandbox.paypal.com/cgi-bin/webscr',
+          authorizationEndpoint: 'https://www.paypal.com/cgi-bin/webscr',
           redirectUri: window.location.href,
           type: '1.0',
           popupOptions: { width: 1028, height: 645 }
